@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="calculator.js" nonce></script>
+    <title>Mini Calculator</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="main">
+        <!-- DISPLAY SCREEN -->
+        <div id="screen">
+          <p id="screen-text">0</p>
+        </div>
+        <!-- FORM -->
+        <form>
+          <div>
+            <button class="reset-button" type="button" onclick="resetAll()">
+              AC
+            </button>
+            <button type="button" onclick="clearScreen()">Del</button>
+            <button type="button" onclick="addOperator(this.value)">%</button>
+
+            <!-- <button type="button" value="." onclick="addNumber(this.value)">
+              _
+            </button> -->
+            <button type="button" value="/" onclick="addOperator(this.value)">
+              /
+            </button>
+          </div>
+          <div>
+            <button type="button" value="7" onclick="addNumber(this.value)">
+              7
+            </button>
+            <button type="button" value="8" onclick="addNumber(this.value)">
+              8
+            </button>
+            <button type="button" value="9" onclick="addNumber(this.value)">
+              9
+            </button>
+            <button type="button" value="*" onclick="addOperator(this.value)">
+              *
+            </button>
+          </div>
+          <div>
+            <button type="button" value="4" onclick="addNumber(this.value)">
+              4
+            </button>
+            <button type="button" value="5" onclick="addNumber(this.value)">
+              5
+            </button>
+            <button type="button" value="6" onclick="addNumber(this.value)">
+              6
+            </button>
+            <button type="button" value="-" onclick="addOperator(this.value)">
+              -
+            </button>
+          </div>
+          <div>
+            <button type="button" value="1" onclick="addNumber(this.value)">
+              1
+            </button>
+            <button type="button" value="2" onclick="addNumber(this.value)">
+              2
+            </button>
+            <button type="button" value="3" onclick="addNumber(this.value)">
+              3
+            </button>
+            <button type="button" value="+" onclick="addOperator(this.value)">
+              +
+            </button>
+          </div>
+          <div>
+            <button type="button" value="0" onclick="addNumber(this.value)">
+              0
+            </button>
+            <button type="button" value="." onclick="addNumber(this.value)">
+              .
+            </button>
+
+            <button class="double-space" type="button" onclick="calculate()">
+              =
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
